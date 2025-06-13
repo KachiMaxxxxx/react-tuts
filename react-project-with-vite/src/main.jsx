@@ -1,5 +1,8 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
+import Header from "./header";
+import Main from "./maincontent";
+import Footer from "./footer";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -8,39 +11,10 @@ root.render(
     <Main />
 
     <Page />
-    <footer> &copy; 2025 Maxxxxx development. All rights reserved.</footer>
+    <Footer/>
   </>
 );
 
-function Header() {
-  return (
-    <header className="header">
-      <img src="/src/assets/react.svg" alt="React Logo" width="40px" />
-
-    <nav>
-      <ul className="nav-list">
-        <li>Pricing</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
-    </header>
-  );
-}
-function Main() {
-  return (
-    <main>
-      <h1>Fun facts about React</h1>
-      <ul>
-        <li>Was first created in 2013</li>
-        <li>Was originally created by Jordan Walker</li>
-        <li>Has well over 200k stars on github</li>
-        <li>Is mantained by meta</li>
-        <li>Powers thousands of enterprise apps, including mobile apps</li>
-      </ul>
-    </main>
-  );
-}
 function Page() {
   return (
     <ol>
