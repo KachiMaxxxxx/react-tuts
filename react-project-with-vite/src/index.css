@@ -6,23 +6,54 @@
 }
 
 body{
-  font-family:system-ui, sans-serif;
-  background-color: black;
+  font-family:Inter, sans-serif;
+  background-color: rgb(10, 12, 19);
   color:azure;
-  
-}
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
 }
 
-.nav__list {
-  list-style: none;
-  display: flex;
-  gap: 5rem;
+
+.header{
+    line-height: 5rem;
+    background: #000
+}
+
+.navbar{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding-left: 2rem;
+}
+.nav__text{
+    font-size: 1.5rem;
+    color:#85d9e4;
+    font-weight: 600;
+    
+}
+.nav__img{
+    width:1.5rem;
+    height:1.8rem;
+}
+
+.main{
+  width: 100vw;
+  background-image: url(/src/assets/react.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 20rem;
   
 }
-.header .header__img{
-  width: 55px;
+.main__text{
+ margin: 2.5rem 1.2rem 1.2rem 1.2rem;
+}
+.main__list{
+    padding-left:3rem;
+    margin-bottom:5rem;
+    
+}
+.main__list li{
+    padding: 0.5rem;
+}
+.main__list li::marker{
+  color:aqua;
 }
