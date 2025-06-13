@@ -14,8 +14,16 @@ root.render(
 
 function Header() {
   return (
-    <header>
+    <header className="header">
       <img src="/src/assets/react.svg" alt="React Logo" width="40px" />
+
+    <nav>
+      <ul className="nav-list">
+        <li>Pricing</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
     </header>
   );
 }
